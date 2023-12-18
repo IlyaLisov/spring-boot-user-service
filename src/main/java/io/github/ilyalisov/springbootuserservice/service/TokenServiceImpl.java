@@ -19,8 +19,14 @@ import java.util.HashMap;
 @RequiredArgsConstructor
 public class TokenServiceImpl implements TokenService {
 
+    /**
+     * JWT properties for token generation.
+     */
     private final JwtProperties properties;
 
+    /**
+     * Secret key for token generation and validation.
+     */
     private SecretKey key;
 
     @PostConstruct
