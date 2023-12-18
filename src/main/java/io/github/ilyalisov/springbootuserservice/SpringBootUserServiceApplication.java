@@ -8,7 +8,14 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 @ConfigurationPropertiesScan
 public class SpringBootUserServiceApplication {
 
-    public static void main(String[] args) {
+    /**
+     * Starts an application.
+     *
+     * @param args arguments
+     */
+    public static void main(
+            final String[] args
+    ) {
         SpringApplication.run(SpringBootUserServiceApplication.class, args);
     }
 

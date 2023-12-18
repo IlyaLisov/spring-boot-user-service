@@ -14,6 +14,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserServiceImpl<ID> implements UserService<ID> {
 
+    /**
+     * UserRepository to be used for accessing database.
+     */
     private final UserRepository<ID> userRepository;
 
     @Override
